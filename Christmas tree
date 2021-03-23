@@ -1,0 +1,10 @@
+//https://www.codewars.com/kata/52755006cc238fcae70000ed
+
+function christmasTree(height) {
+  let width = height * 2 - 1;
+  let str = [];
+  for(let i = 1; i <= width; i += 2){
+    str.push(' '.repeat((width - i)/2) + '*'.repeat(i) + ' '.repeat((width - i) / 2));
+  } 
+  return str.join('\n');
+}
