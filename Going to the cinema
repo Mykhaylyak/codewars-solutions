@@ -1,0 +1,18 @@
+// https://www.codewars.com/kata/562f91ff6a8b77dfe900006e
+   function movie(card, ticket, perc) {
+let WithTicketPrice = 0;
+let WithCardPrice = card+ticket*perc;
+let Counter = 1;
+
+while (WithTicketPrice <= Math.ceil(WithCardPrice)) {
+
+      WithTicketPrice = WithTicketPrice + ticket;
+
+      WithCardPrice = WithCardPrice + (ticket*Math.pow(perc, Counter)*perc);
+      Counter++;
+
+    }
+
+  return Counter-1;
+
+};
